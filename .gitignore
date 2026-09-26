@@ -1,0 +1,26 @@
+# ===== 构建输出 =====
+dist/
+artifacts/
+obj/
+bin/
+_buildcheck/
+
+# ===== 本地备份(AI 生成, 不入库) =====
+backup/
+*.bak
+*.bak-*
+
+# ===== 运行时配置(用户本机数据) =====
+config/
+
+# ===== IDE / 系统 =====
+.vs/
+.vscode/
+*.user
+*.suo
+Thumbs.db
+Desktop.ini
+
+# ===== 临时文件 =====
+*.tmp
+~$*

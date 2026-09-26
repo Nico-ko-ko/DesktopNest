@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E6A4187-7B0B-4C20-88B2-CA9D5B6A043E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DesktopNest</RootNamespace>
+    <AssemblyName>DesktopNest</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <LangVersion>5</LangVersion>
+    <ApplicationIcon>assets\DesktopNest.ico</ApplicationIcon>
+    <ApplicationManifest>src\DesktopNest\app.manifest</ApplicationManifest>
+    <OutputPath>dist\</OutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="$(MSBuildToolsPath)\WPF\PresentationCore.dll" />
+    <Reference Include="$(MSBuildToolsPath)\WPF\WindowsBase.dll" />
+    <Reference Include="$(MSBuildToolsPath)\System.Xaml.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\DesktopNest\AppSettingsStore.cs" />
+    <Compile Include="src\DesktopNest\IconService.cs" />
+    <Compile Include="src\DesktopNest\MainForm.cs" />
+    <Compile Include="src\DesktopNest\Program.cs" />
+    <Compile Include="src\DesktopNest\SelfTest.cs" />
+    <Compile Include="src\DesktopNest\SettingsModel.cs" />
+    <Compile Include="src\DesktopNest\ShortcutImporter.cs" />
+    <Compile Include="src\DesktopNest\ShortcutLauncher.cs" />
+    <Compile Include="src\DesktopNest\WindowPlacement.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
