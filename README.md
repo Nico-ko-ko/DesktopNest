@@ -1,5 +1,7 @@
 # DesktopNest
 
+> **本仓库为 DesktopNest 唯一官方仓库**（github.com/Nico-ko-ko/DesktopNest）。任何其他网站、网盘、论坛或个人主页分发的副本均非官方，请以本仓库为准。
+
 DesktopNest 是一个使用 C# 和 WinForms 编写的 Windows 桌面软件收纳工具，最多可收纳 64 个项目。桌面项目会移动进收纳袋，移出时放回原桌面位置；除用户主动使用图片链接下载背景外，程序不访问网络，也不依赖第三方框架或额外运行时安装。
 
 ## 运行
