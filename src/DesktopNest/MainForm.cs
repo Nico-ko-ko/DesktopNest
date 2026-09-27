@@ -2786,7 +2786,7 @@ namespace DesktopNest
             protected override void OnMouseDoubleClick(MouseEventArgs e)
             {
                 base.OnMouseDoubleClick(e);
-                if (dragging || dragPending)
+                if (dragging)
                 {
                     return;
                 }
