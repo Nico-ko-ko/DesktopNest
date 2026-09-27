@@ -21,6 +21,15 @@ config/
 Thumbs.db
 Desktop.ini
 
+# ===== 真实桌面收纳数据(防御性, 防止误提交) =====
+# 收纳数据本体与快捷方式副本: 含真实桌面项目名与目标路径, 绝不能入库
+data.json
+data.corrupt.*.json
+error.log
+*.lnk
+*.url
+bg_cache/
+
 # ===== 临时文件 =====
 *.tmp
 ~$*
