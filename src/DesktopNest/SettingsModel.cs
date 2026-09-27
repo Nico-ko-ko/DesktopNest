@@ -12,7 +12,7 @@ namespace DesktopNest
         public const string MutexName = @"Local\DesktopNest.SingleInstance";
         public const string ActivationEventName = @"Local\DesktopNest.Activate";
         public const int SettingsVersion = 1;
-        public const int MaxItems = 64;
+        public const int MaxItems = 100;
     }
 
     internal static class BackgroundModes
